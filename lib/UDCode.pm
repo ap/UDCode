@@ -28,6 +28,13 @@ decodable, because C<'abba' . 'b' eq 'ab' . 'b' . 'ab'>. But the code
 C<('a', 'ab', 'abb')> I<is> uniquely decodable, because there is no such
 pair of sequences of code words.
 
+This module provides a pair of functions to tell whether a set of
+code words is a uniquely decodable code, and to find an example of
+sequences of code words whose concatenations are the same, if there is
+such a pair.
+
+=head1 INTERFACE
+
 =head2 C<is_udcode>
 
 C<is_udcode(@words)> returns true if and only if the specified code is
@@ -117,9 +124,9 @@ sub subtract {
 
 =head1 AUTHOR
 
-Mark Jason Dominus (C<mjd@plover.com>)
+Mark Jason Dominus
 
-=head1 COPYRIGHT
+=head1 COPYRIGHT AND LICENSE
 
 This software is hereby released into the public domain.  You may use,
 modify, or distribute it for any purpose whatsoever without restriction.
