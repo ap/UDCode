@@ -2,8 +2,8 @@ package UDCode;
 
 $VERSION = "1.03";
 
-use base 'Exporter';
-@EXPORT = qw(is_udcode ud_pair);
+BEGIN { require Exporter; *import = \&Exporter::import }
+our @EXPORT = qw(is_udcode ud_pair);
 
 =head1 NAME
 
