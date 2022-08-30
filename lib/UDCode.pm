@@ -19,13 +19,13 @@ UDCode - Does a set of code words form a uniquely decodable code?
 
 =head1 DESCRIPTION
 
-A code is a set of strings, called the I<code words>.  A code is
-"uniquely decodable" if any string I<S> that is a concatenation of
+A I<code> is a set of strings, called the I<code words>. A code is
+I<uniquely decodable> if any string I<S> that is a concatenation of
 code words is so in I<exactly one way>.
 
-For example, the code C<"ab", "abba", "b"> is I<not> uniquely
-decodable, because C<"abba" . "b" eq "ab" . "b" . "ab">.  But the code
-C<"a", "ab", "abb"> I<is> uniquely decodable, because there is no such
+For example, the code C<('ab', 'abba', 'b')> is I<not> uniquely
+decodable, because C<'abba' . 'b' eq 'ab' . 'b' . 'ab'>. But the code
+C<('a', 'ab', 'abb')> I<is> uniquely decodable, because there is no such
 pair of sequences of code words.
 
 =head2 C<is_udcode>
