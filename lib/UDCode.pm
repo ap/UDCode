@@ -1,6 +1,8 @@
+use strict; use warnings;
+
 package UDCode;
 
-$VERSION = "1.03";
+our $VERSION = '1.04';
 
 BEGIN { require Exporter; *import = \&Exporter::import }
 our @EXPORT = qw(is_udcode ud_pair);
