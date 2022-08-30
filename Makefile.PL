@@ -21,6 +21,9 @@ my %META = (
 			requires => {qw(
 				Test::More 0
 			)},
+			recommends => {qw(
+				Test::Differences 0
+			)},
 		},
 	},
 );

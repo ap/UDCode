@@ -133,10 +133,5 @@ modify, or distribute it for any purpose whatsoever without restriction.
 
 =cut
 
-unless (caller) {
-  my ($a, $b) = ud_pair("ab", "abba", "b");
-  print "@$a == @$b\n";
-}
-
 1;
 
